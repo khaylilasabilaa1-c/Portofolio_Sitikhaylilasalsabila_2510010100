@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio Mini Khaylila</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcce0;
+            margin: 40px;
+        }
+        h1::marker {
+            content: "🎀";
+            color: #ff66b3;
+            border-bottom: 3px dotted #ffb3d9;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #f9c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+        }
+        ul {
+            background-color: #ffe6f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        ol {
+            background-color: #fff0f8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        li {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border: 6px solid #ffb3d9;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        #faktaText {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #ff66b3;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff4da6;
+        }
+    </style>
+    </head>
+<body>
+    <h1>Portofolio Mini Khaylila</h1>
+    <img src="lalalalala.jpg" alt="Foto Profil" class="profile-img">
+    <p>Halo, Perkenalkan nama saya Siti Khaylila Salsabila,</p>
+    <p>Saya seorang mahasiswa dari prodi Teknik Informatika di UNISKA Banjarmasin.</p>
+    <p>Saya senang belajar Teknologi baru dan ingin belajar membuat projek-projek kreatif.</p>
+    <h2>Minat dan Hobi Saya</h2>
+    <p>Saya tertarik dengan dunia pemrograman, karena itu saya sangat senang belajar coding. Selain itu, saya juga suka membaca novel, bermain game, dan mendengarkan musik.</p>
+    <h2>Keterampilan yang dipelajari</h2>
+    <p>Beberapa keterampilan yang sedang saya pelajari saat ini:</p>
+    <ul>
+        <li>HTML - Struktur website</li>
+        <li>CSS - Styling dan desain</li>
+        <li>JavaScript - Interaksi dalam web</li>
+        <li>Python - Dasar pemrograman</li>
+    </ul>
+
+    <h2>Hubungi Saya</h2>
+    <p>Silahkan hubungi saya melalui kontak dibawah ini:</p>
+    <ol>
+        <li>Email:<a href="mailto:khaylilasabilaa1@gmail.com"> khaylilasabilaa1@gmail.com</a></li>
+        <li>Whatsapp:<a href="https://wa.me/6285117104661" target="_blank"> 085117104661</a></li>
+        <li>Instagram:<a href="https://www.instagram.com/skhyllaa_?igsh=MWhxdHRkMjltdDNzNw==" target="_blank"> @skhyllaa_</a></li>
+        <li>Tiktok:<a href="https://www.tiktok.com/@khaylilasabila?_r=1&_t=ZS-913QU77b8Su" target="_blank"> @khaylilasabila</a></li>
+        <li>X:<a href="https://x.com/bilaasecret?t=sTv9IFQIUIuJXn4XJqcfzQ&s=08" target="_blank"> @bilaasecret</a></li> 
+    </ol>
+
+    <h3>Fakta Menarik</h3>
+    <button id="tombol-sapa">Tampilkan Fakta Menarik</button>
+
+    <Script>
+        //Array berisi fakta-fakta menarik 
+        var faktaMenarik = [
+            " Saya suka membaca novel sambil mendengarkan musik", 
+            " Ini adalah Website pertama yang saya buat sendiri", 
+            " Saya orangnya aktif tapi cepat merasa lelah"
+        ];
+
+        //Ambil elemen tombol
+        var tombol = document.getElementById('tombol-sapa');
+        
+        //Tambahkan event listener untuk klik tombol
+        tombol.onclick = function() {
+            //pilih fakta random
+            var randomIndex = Math.floor(Math.random() * faktaMenarik.length);
+            var fakta = faktaMenarik[randomIndex];
+
+            //Tampilkan alert
+            alert('Fakta Menarik:'+ fakta);
+        };
+    </Script>
+</body>
+</html>
